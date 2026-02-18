@@ -1,7 +1,7 @@
 function Footer() {
 
     return (
-        <div className="py-2 bg-neutral-900 text-white text-center text-2xl font-mododica border-t-neutral-600 border-t">
+        <div className="py-4 bg-black text-neutral-100 font-light text-center text-lg font-poppins border-t-neutral-800 border-t">
             Copyright &copy; {new Date().getFullYear()} Kiran Bhattarai
         </div>
     )
