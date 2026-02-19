@@ -8,8 +8,10 @@ function Tag({ text }) {
 
 function ProjectCard({ image, name, date, desc, tags, github }) {
   return (
-    <div className="bg-[#020202] w-90 rounded-2xl rounded-tl-none rounded-tr-none border border-gray-800 hover:border-gray-700 duration-200">
-      <img src={image} alt="" className="w-[101%] max-h-51 object-contain" />
+    <div className="bg-[#020202] rounded-2xl rounded-tl-none rounded-tr-none border border-gray-800 hover:border-gray-700 duration-200">
+      <div className="bg-slate-950">
+        <img src={image} alt="" className="w-[101%] max-h-70 object-contain" />
+      </div>
       <div className="text-white p-5 flex-col flex gap-3">
         <div className="flex justify-between">
           <h1 className="text-3xl font-poppins font-medium">{name}</h1>

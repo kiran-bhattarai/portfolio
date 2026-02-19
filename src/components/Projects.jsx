@@ -13,7 +13,6 @@ const projectList = [
     tags: ["React", "Node.js", "MongoDB", "Express", "TailwindCSS"],
     github: "https://github.com/kiran-bhattarai/LogBook",
   },
-
   {
     image: PasswordGenImg,
     date: "Dec 2025",
@@ -22,7 +21,6 @@ const projectList = [
     tags: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/kiran-bhattarai/secure-password-generator",
   },
-
   {
     image: TicTacToeImg,
     date: "Nov 2025",
@@ -36,17 +34,17 @@ const projectList = [
 function Projects() {
 
   return (
-    <div id="projects" className="pt-6 text-white ">
-      <div className="relative bg-white/2 backdrop-blur-sm rounded-4xl px-10 py-10">
+    <div id="projects" className="pt-6 text-white items-center flex flex-col">
+      <div className="relative bg-white/2 backdrop-blur-sm rounded-4xl sm:px-10 md:px-4 xl:px-10 py-10 px-2 w-[99%] max-w-7xl" >
         <SectionDivider />
         <h2 className="text-5xl font-bold tracking-wide text-white text-center mb-6">
           <span className="bg-linear-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
             Projects
           </span>
         </h2>
-        <div className="gap-4 columns-1 sm:columns-1 lg:columns-2 xl:columns-3 2xl:columns-3 justify-self-center">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 md:gap-3 pt-6">
           {projectList.map((p) =>
-            <div key={p.name} className="break-inside-avoid mb-4">
+            <div key={p.name} className="break-inside-avoid mb-4 md:mb-3">
               <ProjectCard {...p} />
             </div>
           )}
