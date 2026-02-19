@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard"
-import LogBookImg from "../assets/Projects/LogBook.png"
-import TicTacToeImg from "../assets/Projects/TicTacToeGUI.png"
-import PasswordGenImg from "../assets/Projects/PasswordGenerator.png"
+import LogBookImg from "../assets/projects/LogBook.png"
+import TicTacToeImg from "../assets/projects/TicTacToeGUI.png"
+import PasswordGenImg from "../assets/projects/PasswordGenerator.png"
 import SectionDivider from "./SectionDivider"
 import { motion } from "framer-motion"
 
