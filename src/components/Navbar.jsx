@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 function Navbar() {
 
     const scrollToSection = (id) => {
@@ -12,7 +14,12 @@ function Navbar() {
     };
 
     return (
-        <div className="w-screen fixed top-0 z-10 bg-black shadow-[0px_0px_1px_1px] shadow-[#b1b1b131] flex justify-center items-center">
+        <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            
+            className="w-screen fixed top-0 z-10 bg-black shadow-[0px_0px_1px_1px] shadow-[#b1b1b131] flex justify-center items-center">
             <div className="max-w-300 justify-self-center w-300 items-center flex justify-between py-1 2xl:py-2 sm:px-6 px-2" >
                 <a href="" className="hover:scale-110 duration-300 mr-2">
                     <span className="font-poppins text-bold sm:text-[26px] text-2xl font-medium text-black tracking-tighter bg-[#4efa96d3] px-2 rounded-lg">KB</span>
@@ -24,13 +31,13 @@ function Navbar() {
                         className="hover:text-green-300 border-2 duration-300 ease-in-out border-transparent hover:leading-8 hover:border-b-green-400 hover:-translate-y-0.75">Skills</button>
                     <button onClick={() => scrollToSection("projects")}
                         className="hover:text-green-300 border-2 duration-300 ease-in-out border-transparent hover:leading-8 hover:border-b-green-400 hover:-translate-y-0.75">Projects</button>
-                    <a href="../assets/CV.pdf" download="CV_KiranBhattarai" className="bg-[#1179514f] border border-green-700 group hover:bg-[#22574391] hover:border-green-500 self-center transition duration-300 text-green-400 sm:px-5  sm:text-[20px] sm:gap-1 px-3.5 text-[18px] gap-0.5 h-9.5 sm:h-full rounded-4xl font-poppins font-medium flex items-center cursor-pointer">
+                    <a href="/CV_KiranBhattarai.pdf" download="CV_KiranBhattarai.pdf" className="bg-[#1179514f] border border-green-700 group hover:bg-[#22574391] hover:border-green-500 self-center transition duration-300 text-green-400 sm:px-5  sm:text-[20px] sm:gap-1 px-3.5 text-[18px] gap-0.5 h-9.5 sm:h-full rounded-4xl font-poppins font-medium flex items-center cursor-pointer">
                         <svg className="group-hover:animate-bounce" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00dd44"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" /></svg>
                         CV
                     </a>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
