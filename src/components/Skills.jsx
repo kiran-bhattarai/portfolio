@@ -27,6 +27,7 @@ function Skills() {
             <SkillCard imageUrl={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"} name={"HTML"} />
             <SkillCard imageUrl={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"} name={"CSS"} />
             <SkillCard imageUrl={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"} name={"Javascript"} />
+            <SkillCard imageUrl={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"} name={"Python"} />
             <SkillCard imageUrl={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"} name={"React"} />
             <SkillCard imageUrl={"https://cdn.simpleicons.org/tailwindcss/06B6D4"} name={"Tailwindcss"} />
             <SkillCard imageUrl={"https://cdn.simpleicons.org/nodedotjs/339933"} name={"NodeJS"} />
