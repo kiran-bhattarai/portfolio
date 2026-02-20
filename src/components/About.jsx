@@ -8,7 +8,6 @@ const texts = [
   "Clean Architecture", 2000,
   "Turning Ideas Into Code", 2000,
   "Clean Code Enthusiast", 2000,
-  "Creative Problem Solver", 2000
 ]
 
 function About() {
@@ -40,7 +39,7 @@ function About() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
 
             className="text-[clamp(14px,3vmin,20px)] font-light text-neutral-400">
-            I’m a self-taught MERN developer focused on building real-world projects and continuously improving my problem-solving skills. I enjoy breaking complex systems down, rebuilding them with cleaner structure, and understanding how things work under the hood. I value clean architecture, thoughtful UI design, and steady progress. Every project I build is another step toward mastering my craft and pushing my limits further.</motion.p>
+            I build full-stack web applications using the MERN stack, focusing on clean architecture, performance, and real-world usability. I enjoy breaking complex systems into simple, scalable solutions and refining them with thoughtful UI design. I prioritize clarity over unnecessary complexity and structure over shortcuts. Every project I ship is built to be practical, maintainable, and one step closer to mastery.</motion.p>
         </div>
         <motion.div
           initial={{ y: 30, opacity: 0 }}
