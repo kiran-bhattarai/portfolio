@@ -1,19 +1,18 @@
-import { motion } from "framer-motion"
-
 function Footer() {
-
-    return (
-        <div className="py-4 overflow-hidden bg-black text-neutral-100 font-light text-center text-lg font-poppins shadow-[0px_0px_1px_1px] shadow-[#b1b1b131]">
-            <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, ease: "easeOut" }}
-                viewport={{once: true}}
-            >
-                Copyright &copy; {new Date().getFullYear()} Kiran Bhattarai
-            </motion.p>
-        </div>
-    )
+    
+  return (
+    <footer className="text-neutral-500 font-mono py-5 flex border-t justify-center border-t-neutral-800 text-xs sm:text-sm px-4">
+      <div className="max-w-6xl min-[700px]:w-full flex min-[700px]:justify-between min-[700px]:flex-row flex-col text-center whitespace-nowrap ">
+        <span>
+          &copy; {new Date().getFullYear()} Kiran Bhattarai. All rights
+          reserved.
+        </span>
+        <span>
+            Building • Learning • Sharing
+        </span>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
