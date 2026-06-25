@@ -1,13 +1,14 @@
-import GitHubIcon from "@/assets/icons/Github";
-import LinkedInIcon from "@/assets/icons/Linkedin";
-import MailIcon from "@/assets/icons/Mail";
+import GitHubIcon from "@/assets/icons/socials/Github";
+import LinkedInIcon from "@/assets/icons/socials/Linkedin";
+import MailIcon from "@/assets/icons/socials/Mail";
+import type { DevData } from "@/types";
 
 const currentAge = Math.floor(
   (new Date().getTime() - new Date("2006-11-09").getTime()) /
     (365.25 * 24 * 60 * 60 * 1000),
 );
 
-export const PORTFOLIO_DATA = {
+export const PORTFOLIO_DATA: DevData = {
   profile: {
     fname: "Kiran",
     lname: "Bhattarai",

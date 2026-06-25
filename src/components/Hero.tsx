@@ -1,5 +1,5 @@
 import { PORTFOLIO_DATA } from "@/data/portfolio";
-import gritTexture from "/gritty.avif";
+import gritTexture from "/texture.avif";
 
 function Hero() {
   const { fname, lname, title, bio, info, tags } = PORTFOLIO_DATA.profile;
@@ -45,9 +45,9 @@ function Hero() {
             {info}
           </p>
           <div className="flex justify-between">
-            <img src="pac2.gif" className="w-45 " alt="" />
+            <img src="pacman.gif" className="w-45 " alt="" />
             <a
-              href="/CV_KiranBhattarai.pdf"
+              href="/kiran-bhattarai-cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono border text-lg hover:font-extrabold border-secondary hover:bg-secondary bg-secondary/30 shadow-secondary hover:text-black pt-1.75 px-3 py-1.5 rounded transition-colors"
@@ -58,7 +58,7 @@ function Hero() {
         </div>
 
         <div className="text-neutral-500 flex font-mono uppercase gap-5 items-center -translate-y-5">
-          <img src="/download.gif" alt="" className="brightness-50 w-8 h-80" />
+          <img src="/barcode.gif" alt="" className="brightness-50 w-8 h-80" />
           <span className="whitespace-nowrap tracking-widest text-sm [writing-mode:vertical-lr] rotate-180 self-center">
             building • learning • sharing
           </span>

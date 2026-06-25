@@ -1,4 +1,4 @@
-import Section from "./Section";
+import Section from "./Section.tsx";
 import { PORTFOLIO_DATA } from "@/data/portfolio.ts";
 
 function Contact() {
@@ -9,8 +9,8 @@ function Contact() {
       <div className="text-sm">
         <p className="mb-6">
           I'm currently available for freelance projects, collaborations and
-          internships. 
-          <br/>
+          internships.
+          <br />
           Let's build something amazing together.
         </p>
 

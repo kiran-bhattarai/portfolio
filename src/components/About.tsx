@@ -1,4 +1,4 @@
-import Section from "./Section";
+import Section from "./Section.tsx";
 import Location from "@/assets/icons/Location.tsx";
 import Code from "@/assets/icons/Code.tsx";
 

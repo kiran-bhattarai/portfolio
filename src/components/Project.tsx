@@ -30,7 +30,7 @@ function Project() {
           return (
             <div
               key={p.title}
-              className={`flex min-h-[320px] items-center justify-center transition-all
+              className={`flex min-h-80 items-center justify-center transition-all
               ${isFeatured ? "min-[820px]:col-span-2 flex-row gap-8" : "flex-col gap-4"}
             `}
             >

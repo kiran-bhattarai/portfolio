@@ -1,4 +1,11 @@
 import Arrow from "@/assets/icons/Arrow";
+import type { Project } from "@/types";
+
+interface ProjectCardProps extends Project {
+  index: number;
+  isFeatured: boolean;
+  isSmallScreen: boolean;
+}
 
 function ProjectCard({
   index,
@@ -10,7 +17,7 @@ function ProjectCard({
   tech,
   liveLink,
   githubLink,
-}) {
+}: ProjectCardProps) {
   return (
     <div
       className={`p-6 border h-full w-full max-w-6xl  border-neutral-800 rounded-md text-white bg-[#0a0a0c] flex ${isFeatured ? "gap-10" : "gap-5"}`}
@@ -63,7 +70,7 @@ function ProjectCard({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Demo <Arrow className={!isFeatured && "w-6 h-7"} />
+                Live Demo <Arrow className={!isFeatured ? "w-6 h-7" : ""} />
               </a>
             )}
             {githubLink && (
@@ -73,8 +80,8 @@ function ProjectCard({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub{" "}
-                <Arrow className={!isFeatured && "w-6 h-7 -translate-y-px"} />
+                GitHub 
+                <Arrow className={!isFeatured ? "w-6 h-7 -translate-y-px" : ""} />
               </a>
             )}
           </div>
